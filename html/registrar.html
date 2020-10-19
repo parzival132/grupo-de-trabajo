@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>registrar-ScooterLine</title>
+    <link rel="stylesheet" href="../css/login-registro.css">
+    <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container-registro">
+
+        <div class="container-form-registro">
+
+            <img src="imagenes/logo.png" alt="" class="logo">
+            <h1 class="title">Registrate</h1>
+
+            <form name="registrar" action="" onsubmit="return validaCampos();" method="POST" id="form"
+                autocomplete="off">
+                <label for="">Nombre</label>
+                <input type="text" name="nombre" id=""><span class="barra"></span>
+                <div id="error_nombre">por favor ingrese un nombre</div>
+                <label for="">Rut</label>
+                <input type="text" name="rut" id="rut"><span class="barra"></span>
+                <div id="error_rut">por favor ingrese su rut</div>
+                <label for="">Contraseña</label>
+                <input type="password" name="contrasena" id="contrasena"><span class="barra"></span>
+                <div id="error_contrasena">por favor ingrese una contraseña</div>
+                <label for="">Direccion</label>
+                <input type="text" name="direccion" id="direccion"><span class="barra"></span>
+                <div id="error_direccion">por favor ingrese su direccion </div>
+                <label for="">Email</label>
+                <input type="email" name="correo" id="correo"><span class="barra"></span>
+                <div id="error_correo">por favor ingrese un correo</div>
+
+                <input type="submit" value="Registrar">
+                <p class="warnings" id="warnings"></p>
+
+            </form>
+            <span class="text-footer-registro">¿Ya tienes cuenta?<a href="index.html">Inicia Sesion</a></span>
+
+
+        </div>
+
+        <div class="container-text">
+            <div class="capa"></div>
+            <h1 class="title-description">Sumate a la experiencia que SL tiene para ti</h1>
+
+        </div>
+
+    </div>
+    <script src="../js/registrar.js"></script>
+</body>
+
+</html>
